@@ -1,4 +1,4 @@
-
+package com.example.openweathertp;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkResponse;
@@ -21,8 +21,8 @@ public class GsonRequest<T> extends Request<T> {
     /**
      * Make a GET request and return a parsed object from JSON.
      *
-     * @param url URL of the request to make
-     * @param clazz Relevant class object, for Gson's reflection
+     * @param url     URL of the request to make
+     * @param clazz   Relevant class object, for Gson's reflection
      * @param headers Map of request headers
      */
     public GsonRequest(String url, Class<T> clazz, Map<String, String> headers,
