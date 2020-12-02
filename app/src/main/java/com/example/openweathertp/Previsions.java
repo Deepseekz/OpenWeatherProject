@@ -5,6 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Previsions implements Serializable {
+    private List<Prevision> previsions;
+    private City city;
+
+    public Previsions(List<Prevision> previsions, City city) {
+        this.previsions = previsions;
+        this.city = city;
+
+
+    }
+
     public List<Prevision> getPrevisions() {
         return previsions;
     }
@@ -19,15 +29,5 @@ public class Previsions implements Serializable {
 
     public void setCity(City city) {
         this.city = city;
-    }
-
-    private List<Prevision> previsions;
-    private City city;
-
-    public Previsions(List<Prevision> previsions, City city){
-        this.previsions = previsions;
-        this.city = city;
-
-
     }
 }

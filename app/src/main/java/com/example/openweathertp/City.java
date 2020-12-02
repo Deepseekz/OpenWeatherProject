@@ -12,4 +12,36 @@ public class City {
         this._coord = _coord;
         this._country = _country;
     }
+
+    public int getId() {
+        return _id;
+    }
+
+    public void setId(int _id) {
+        this._id = _id;
+    }
+
+    public String getName() {
+        return _name;
+    }
+
+    public void setName(String _name) {
+        this._name = _name;
+    }
+
+    public Coord getCoord() {
+        return _coord;
+    }
+
+    public void setCoord(Coord _coord) {
+        this._coord = _coord;
+    }
+
+    public String getCountry() {
+        return _country;
+    }
+
+    public void setCountry(String _country) {
+        this._country = _country;
+    }
 }
