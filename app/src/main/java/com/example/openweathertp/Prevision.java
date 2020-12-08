@@ -5,12 +5,12 @@ import java.io.Serializable;
 public class Prevision implements Serializable {
 
     private Main main;
-    private Weather weather;
+    private Weathers weathers;
     private Wind wind;
 
-    public Prevision(Main main, Weather weather, Wind wind) {
+    public Prevision(Main main, Weathers weathers, Wind wind) {
         this.main = main;
-        this.weather = weather;
+        this.weathers = weathers;
         this.wind = wind;
     }
 
@@ -22,12 +22,12 @@ public class Prevision implements Serializable {
         this.main = main;
     }
 
-    public Weather getWeather() {
-        return weather;
+    public Weathers getWeathers() {
+        return weathers;
     }
 
-    public void setWeather(Weather weather) {
-        this.weather = weather;
+    public void setWeathers(Weathers weathers) {
+        this.weathers = weathers;
     }
 
     public Wind getWind() {
@@ -36,5 +36,10 @@ public class Prevision implements Serializable {
 
     public void setWind(Wind wind) {
         this.wind = wind;
+    }
+
+    @Override
+    public String toString() {
+        return weathers.toString();
     }
 }
