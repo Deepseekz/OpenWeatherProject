@@ -1,11 +1,11 @@
 package com.example.openweathertp;
 
 public class Coord {
-    private double _lat;
-    private double _lon;
+    private double lat;
+    private double lon;
 
-    public Coord(double _lat, double _lon) {
-        this._lat = _lat;
-        this._lon = _lon;
+    public Coord(double lat, double lon) {
+        this.lat = lat;
+        this.lon = lon;
     }
 }

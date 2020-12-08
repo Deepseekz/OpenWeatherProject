@@ -1,47 +1,57 @@
 package com.example.openweathertp;
 
 public class City {
-    private int _id;
-    private String _name;
-    private Coord _coord;
-    private String _country;
+    private int id;
+    private String name;
+    private Coord coord;
+    private String country;
 
-    public City(int _id, String _name, Coord _coord, String _country) {
-        this._id = _id;
-        this._name = _name;
-        this._coord = _coord;
-        this._country = _country;
+    public City(int id, String name, Coord coord, String country) {
+        this.id = id;
+        this.name = name;
+        this.coord = coord;
+        this.country = country;
     }
 
     public int getId() {
-        return _id;
+        return id;
     }
 
     public void setId(int _id) {
-        this._id = _id;
+        this.id = _id;
     }
 
     public String getName() {
-        return _name;
+        return name;
     }
 
     public void setName(String _name) {
-        this._name = _name;
+        this.name = _name;
     }
 
     public Coord getCoord() {
-        return _coord;
+        return coord;
     }
 
     public void setCoord(Coord _coord) {
-        this._coord = _coord;
+        this.coord = _coord;
     }
 
     public String getCountry() {
-        return _country;
+        return country;
     }
 
     public void setCountry(String _country) {
-        this._country = _country;
+        this.country = _country;
+    }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", coord=" + coord +
+                ", country='" + country + '\'' +
+                '}';
     }
 }

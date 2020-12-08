@@ -11,8 +11,6 @@ public class Previsions implements Serializable {
     public Previsions(List<Prevision> previsions, City city) {
         this.previsions = previsions;
         this.city = city;
-
-
     }
 
     public List<Prevision> getPrevisions() {

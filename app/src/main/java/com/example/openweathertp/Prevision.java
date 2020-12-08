@@ -3,17 +3,38 @@ package com.example.openweathertp;
 import java.io.Serializable;
 
 public class Prevision implements Serializable {
-    private String debug;
-    private Window window;
 
-    public Prevision(String debug, Window window) {
-        this.debug = debug;
-        this.window = window;
+    private Main main;
+    private Weather weather;
+    private Wind wind;
+
+    public Prevision(Main main, Weather weather, Wind wind) {
+        this.main = main;
+        this.weather = weather;
+        this.wind = wind;
     }
 
-    public String getDebug() {
+    public Main getMain() {
+        return main;
     }
 
-    public Window getWindow() {
+    public void setMain(Main main) {
+        this.main = main;
+    }
+
+    public Weather getWeather() {
+        return weather;
+    }
+
+    public void setWeather(Weather weather) {
+        this.weather = weather;
+    }
+
+    public Wind getWind() {
+        return wind;
+    }
+
+    public void setWind(Wind wind) {
+        this.wind = wind;
     }
 }
