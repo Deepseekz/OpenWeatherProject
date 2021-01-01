@@ -12,11 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenWeatherTP">
-        <activity android:name=".MainActivity">
+        <activity android:name="Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="Activities.FoodActivity" />
+        <activity android:name="Activities.WeatherActivity" />
+        <activity android:name="Activities.DressingActivity" />
+        <activity android:name="Activities.ActivitiesActivity" />
     </application>
 </manifest>
