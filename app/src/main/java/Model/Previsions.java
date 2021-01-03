@@ -1,7 +1,6 @@
-package com.example.openweathertp;
+package Model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Previsions implements Serializable {

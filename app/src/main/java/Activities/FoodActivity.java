@@ -5,7 +5,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.openweathertp.databinding.ActivityFoodBinding;
+import com.example.Classes.databinding.ActivityFoodBinding;
 
 public class FoodActivity extends AppCompatActivity {
     private ActivityFoodBinding binding;

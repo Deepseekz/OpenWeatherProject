@@ -9,7 +9,14 @@
         android:layout_height="wrap_content"
         android:text="Liste métérologique"
         android:textSize="25dp"
+        android:padding="20dp"
         android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saisissez la ville de votre choix"
+        android:padding="5dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewMeteo"

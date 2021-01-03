@@ -1,4 +1,4 @@
-package com.example.openweathertp;
+package Model;
 
 public class Wind {
     private double speed;

@@ -1,4 +1,4 @@
-package com.example.openweathertp;
+package Model;
 
 public class Weather {
     private String description;

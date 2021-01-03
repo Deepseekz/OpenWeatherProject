@@ -1,4 +1,4 @@
-package com.example.openweathertp;
+package Model;
 
 import android.content.Context;
 

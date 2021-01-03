@@ -5,7 +5,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.openweathertp.databinding.ActivityWeatherBinding;
+import com.example.Classes.databinding.ActivityWeatherBinding;
 
 public class WeatherActivity extends AppCompatActivity {
     private ActivityWeatherBinding binding;

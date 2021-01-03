@@ -5,7 +5,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.openweathertp.databinding.ActivityDressingBinding;
+import com.example.Classes.databinding.ActivityDressingBinding;
 
 public class DressingActivity extends AppCompatActivity {
     private ActivityDressingBinding binding;

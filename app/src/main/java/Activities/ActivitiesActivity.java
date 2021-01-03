@@ -5,7 +5,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.openweathertp.databinding.ActivityActivitiesBinding;
+import com.example.Classes.databinding.ActivityActivitiesBinding;
 
 public class ActivitiesActivity extends AppCompatActivity {
     private ActivityActivitiesBinding binding;
