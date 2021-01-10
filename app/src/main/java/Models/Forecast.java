@@ -1,8 +1,9 @@
 package Models;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Forecast {
+public class Forecast implements Serializable {
     private Main main;
     private ArrayList<Weather> weather;
     private String dt_txt;

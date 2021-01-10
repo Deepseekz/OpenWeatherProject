@@ -6,7 +6,9 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 
-public class VolleyHelper {
+import java.io.Serializable;
+
+public class VolleyHelper implements Serializable {
     private static VolleyHelper INSTANCE;
     private RequestQueue requestQueue;
     private Context context;

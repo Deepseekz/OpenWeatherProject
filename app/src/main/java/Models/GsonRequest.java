@@ -9,10 +9,11 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 
+import java.io.Serializable;
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
-public class GsonRequest<T> extends Request<T> {
+public class GsonRequest<T> extends Request<T> implements Serializable {
     private final Gson gson = new Gson();
     private final Class<T> clazz;
     private final Map<String, String> headers;
