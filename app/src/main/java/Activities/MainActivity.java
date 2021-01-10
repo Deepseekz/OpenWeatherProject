@@ -11,6 +11,8 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.example.Classes.databinding.ActivityMainBinding;
 
+import java.util.ArrayList;
+
 import Adapters.RecyclerViewAdapter;
 import Models.Forecast;
 import Models.Forecasts;
@@ -19,7 +21,7 @@ import Models.VolleyHelper;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
-    private Forecasts forecasts;
+    private ArrayList<Forecast> list = new ArrayList<>();
     private String openWeatherUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Annecy,FR&units=metric&lang=fr&appid=317afbd7d5cc0b49d4a7066f8bf68e2c";
     private RecyclerViewAdapter adapter;
 
@@ -28,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
-        setContentView(view);
 
         initializeOpenWeatherData();
         initializeUI();
+        setContentView(view);
     }
 
     private void initializeUI() {
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         binding.recyclerViewMeteo.setLayoutManager(layoutManager);
         binding.recyclerViewMeteo.setFocusable(false);
 
-        adapter = new RecyclerViewAdapter(forecasts.getList());
+        adapter = new RecyclerViewAdapter(list);
         binding.recyclerViewMeteo.setAdapter(adapter);
     }
 
@@ -48,11 +50,10 @@ public class MainActivity extends AppCompatActivity {
         final GsonRequest gsonRequest = new GsonRequest(openWeatherUrl, Forecasts.class, null, new Response.Listener<Forecasts>() {
             @Override
             public void onResponse(Forecasts forecasts) {
-                String resultat = "";
+                String result = "";
                 for (Forecast forecast : forecasts.getList()) {
-                    resultat += forecast.toString();
+                    list.add(forecast);
                 }
-                resultat += forecasts.getCity().getName();
             }
         }, new Response.ErrorListener() {
             @Override

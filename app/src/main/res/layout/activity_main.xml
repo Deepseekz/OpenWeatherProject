@@ -5,6 +5,15 @@
     android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fthhfdgfdghgdf"
+        android:textSize="25dp"
+        android:padding="20dp"
+        android:textAlignment="center" />
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Liste métérologique"
