@@ -10,7 +10,7 @@
         android:text="Liste métérologique"
         android:textSize="25dp"
         android:padding="20dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="match_parent"
@@ -22,7 +22,6 @@
         android:id="@+id/recyclerViewMeteo"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
 
     </androidx.recyclerview.widget.RecyclerView>
